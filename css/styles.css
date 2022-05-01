@@ -545,12 +545,15 @@ body {
     
     width: 528px;
     height: 581px;
-        
+    padding: 40px;
+    
+
     background-color: #FFFFFF;
 
     transition-property: transform;
     transition-duration: var(--animation-duration);
     transition-timing-function: var(--timing-function);
+
 }
 
 .icon-close {
