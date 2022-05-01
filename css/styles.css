@@ -10,6 +10,7 @@
     --default-background-color: rgba(255, 255, 255, 1);
     --accessory-background-color:rgba(245, 244, 250, 1);
     --projects-item-gap: 30px;
+    --form-field-standart-gap: 10px;
     --default-padding-gap: 94px;
     --header-bottom-border: 1px;
     --animation-duration: 250ms;
@@ -544,7 +545,7 @@ body {
     transform: translate(-50%, -50%) scale(1);
     
     width: 528px;
-    height: 581px;
+    /* height: 581px; */
     padding: 40px;
     
 
@@ -554,6 +555,7 @@ body {
     transition-duration: var(--animation-duration);
     transition-timing-function: var(--timing-function);
 
+    outline: 1px solid red;
 }
 
 .icon-close {
@@ -580,6 +582,146 @@ body {
 .inside-icon {
     width: 11px;
     height: 11px;
+}
+
+/* .feedback-form {
+    outline: 1px solid blueviolet;
+} */
+
+.feedback-action {
+    margin-bottom: 12px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    
+    color: #212121;
+    /* background-color: aqua;
+    outline: 1px solid black; */
+}
+
+.form-field {
+    margin-bottom: var(--form-field-standart-gap);
+    
+}
+
+.form-field input,
+.form-field-comment textarea {
+    width: 100%;
+    margin: 0;
+    
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-field input{
+    padding: 11px 12px 11px 12px;
+}
+
+.form-field-comment textarea {
+    height: 120px;
+    padding: 12px 16px 12px 16px;
+}
+
+.form-field-comment textarea::placeholder {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    
+    color: rgba(117, 117, 117, 0.5);
+}
+
+.form-label {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+}
+
+.form-field-concent {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.form-field-concent .form-label{
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+}
+
+.form-field-concent a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: var(--active-link-color);
+}
+
+.form-field-concent input[type='checkbox'] {
+    width: 16px;
+    height: 15px;
+    background: #212121;
+}
+
+.form-field-comment {
+    margin-bottom: 20px;
+}
+
+.form-field-concent {
+    margin-bottom: 30px;
+}
+
+textarea {
+    resize: none;
+}
+
+.feedback-form .button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    
+    width: 200px;
+    height: 50px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    color: var(--contrast-text-color);
+    background-color: var(--active-link-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+
+    transition-property: background-color;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--timing-function);
+}
+
+.feedback-form .button:hover,
+.feedback-form .button:focus {
+    background-color: #188CE8;
 }
 
 /*стилизация Footer*/ /* font-style: normal не наследуется из body*/
