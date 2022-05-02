@@ -341,6 +341,43 @@
                     <use href="./images/sprite.svg#close-icon"></use>
                 </svg>
             </button>
+
+            <div role="group" aria-labelledby="feedback-head" class="feedback-section">
+                <p id="feedback-head" class="feedback-action">Оставьте свои данные, мы вам перезвоним</p>
+            
+                <form name="feedback-form" autocomplete="on" class="feedback-form">
+            
+                    <div class="form-field">
+                        <label for="name" class="form-label">Имя</label>
+                        <input type="text" name="username" id="name" required>
+                    </div>
+            
+                    <div class="form-field">
+                        <label for="tel-number" class="form-label">Телефон</la>
+                            <input type="tel" name="telephone-number" id="tel-number" required>
+                    </div>
+            
+                    <div class="form-field">
+                        <label for="email" class="form-label">Почта</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
+            
+                    <div class="form-field-comment">
+                        <label for="comment" class="form-label">Комментарий</label>
+                        <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
+                    </div>
+            
+                    <div class="form-field-concent">
+                        <input type="checkbox" name="concent" id="concent">
+                        <label for="concent" class="form-label">Соглашаюсь с рассылкой и принимаю <a href="">Условия
+                                договора</a></label>
+                    </div>
+            
+            
+                    <button type="submit" class="button">Отправить</button>
+            
+                </form>
+            </div>
         </div>
 
         
