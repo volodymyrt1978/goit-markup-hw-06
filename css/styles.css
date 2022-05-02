@@ -605,6 +605,8 @@ body {
 }
 
 .form-field {
+    /* position: relative; */
+    
     margin-bottom: var(--form-field-standart-gap);
     
 }
@@ -621,6 +623,15 @@ body {
 .form-field input{
     padding: 11px 12px 11px 12px;
 }
+
+/* .form-input:focus + .form-label {
+    color: var(--active-link-color);
+} */
+
+/* .form-field input:focus ~ label,
+label:active {
+    color: var(--active-link-color);
+} */
 
 .form-field-comment textarea {
     height: 120px;
@@ -639,6 +650,10 @@ body {
 }
 
 .form-label {
+    /* position: absolute; */
+    /* left: 0;
+    right: 0; */
+
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
