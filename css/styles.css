@@ -555,7 +555,6 @@ body {
     transition-duration: var(--animation-duration);
     transition-timing-function: var(--timing-function);
 
-    outline: 1px solid red;
 }
 
 .icon-close {
@@ -584,10 +583,6 @@ body {
     height: 11px;
 }
 
-/* .feedback-form {
-    outline: 1px solid blueviolet;
-} */
-
 .feedback-action {
     margin-bottom: 12px;
 
@@ -600,38 +595,61 @@ body {
     letter-spacing: 0.03em;
     
     color: #212121;
-    /* background-color: aqua;
-    outline: 1px solid black; */
+  
 }
 
 .form-field {
-    /* position: relative; */
+    position: relative;
     
     margin-bottom: var(--form-field-standart-gap);
+}
+
+.icon {
+    position: absolute;
+    bottom: 14px;
+    left: 15px;
+
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    width: 12px;
+    height: 12px;
     
+    transition-property: fill;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--timing-function);
+
+}
+
+.form-field:focus-within .icon {
+    fill: var(--active-link-color);
 }
 
 .form-field input,
 .form-field-comment textarea {
     width: 100%;
     margin: 0;
-    
+    outline: 0;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+
+    transition-property: border;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--timing-function);
+}
+
+.form-field input:focus,
+.form-field-comment textarea:focus {
+    border: 1px solid var(--active-link-color);
 }
 
 .form-field input{
-    padding: 11px 12px 11px 12px;
+    padding-left: 42px;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
 }
-
-/* .form-input:focus + .form-label {
-    color: var(--active-link-color);
-} */
-
-/* .form-field input:focus ~ label,
-label:active {
-    color: var(--active-link-color);
-} */
 
 .form-field-comment textarea {
     height: 120px;
