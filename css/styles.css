@@ -587,7 +587,8 @@ body {
     height: 11px;
 }
 
-.icon-close:hover {
+.icon-close:hover,
+.icon-close:focus {
     fill: var(--active-link-color);
 }
 
