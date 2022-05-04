@@ -576,11 +576,19 @@ body {
     cursor: pointer;
 
     background-color: #FFFFFF;
+    
+    transition-property: fill;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--timing-function);
 }
 
 .inside-icon {
     width: 11px;
     height: 11px;
+}
+
+.icon-close:hover {
+    fill: var(--active-link-color);
 }
 
 .feedback-action {
@@ -604,7 +612,7 @@ body {
     margin-bottom: var(--form-field-standart-gap);
 }
 
-.icon {
+.icon-form {
     position: absolute;
     bottom: 14px;
     left: 15px;
@@ -622,7 +630,7 @@ body {
 
 }
 
-.form-field:focus-within .icon {
+.form-field:focus-within .icon-form {
     fill: var(--active-link-color);
 }
 
@@ -668,10 +676,6 @@ body {
 }
 
 .form-label {
-    /* position: absolute; */
-    /* left: 0;
-    right: 0; */
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -682,19 +686,26 @@ body {
 }
 
 .form-field-concent {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-align: center;
+    display: inline-flex;
 }
 
-.form-field-concent .form-label{
+.form-field-concent .form-label {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 12px;
+    /* outline: 1px solid red; */
+}
+
+.form-field-concent .concent-label {
+    margin-left: 8px;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
+
+    
 }
 
-.form-field-concent a {
+.form-field-concent .policy-agreement {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -703,12 +714,29 @@ body {
     letter-spacing: 0.03em;
     text-decoration-line: underline;
     color: var(--active-link-color);
+
+    /* outline: 1px solid red; */
 }
 
 .form-field-concent input[type='checkbox'] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.form-field-concent .icon-checked {
     width: 16px;
     height: 15px;
-    background: #212121;
+    
+    transition-property: background-image, fill;
+    transition-duration: var(--animation-duration);
+    transition-timing-function: var(--timing-function);
+}
+
+.form-field-concent input:checked + .icon-checked {
+    background-image: url(../images/icon-checked.svg);
+    fill: var(--active-link-color)
+    
 }
 
 .form-field-comment {

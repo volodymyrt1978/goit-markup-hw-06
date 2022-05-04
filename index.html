@@ -350,7 +350,7 @@
                     <div class="form-field">
                         <label for="name" class="form-label">Имя</label>
                         <input type="text" name="username" id="name" required>
-                        <svg class="icon">
+                        <svg class="icon-form">
                             <use href="./images/sprite.svg#name"></use>
                         </svg>
                     </div>
@@ -358,7 +358,7 @@
                     <div class="form-field">
                         <label for="tel-number" class="form-label">Телефон</la>
                         <input type="tel" name="telephone-number" id="tel-number" required>
-                        <svg class="icon">
+                        <svg class="icon-form">
                             <use href="./images/sprite.svg#tel"></use>
                         </svg>
                     </div>
@@ -366,7 +366,7 @@
                     <div class="form-field">
                         <label for="email" class="form-label">Почта</label>
                         <input type="email" name="email" id="email" required>
-                        <svg class="icon">
+                        <svg class="icon-form">
                             <use href="./images/sprite.svg#mail"></use>
                         </svg>
                     </div>
@@ -377,9 +377,14 @@
                     </div>
             
                     <div class="form-field-concent">
-                        <input type="checkbox" name="concent" id="concent">
-                        <label for="concent" class="form-label">Соглашаюсь с рассылкой и принимаю <a href="">Условия
-                                договора</a></label>
+                        <label class="form-label">
+                            <input type="checkbox" name="concent" id="concent" required>
+                            <svg class="icon-checked">
+                                <use href="./images/sprite.svg#icon-checkbox"></use>
+                            </svg>
+                        <span class="concent-label">Соглашаюсь с рассылкой и принимаю&nbsp;</span>
+                        </label>
+                        <span><a href="" class="policy-agreement">Условия договора</a></span>
                     </div>
             
             
