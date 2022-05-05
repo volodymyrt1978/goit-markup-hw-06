@@ -601,7 +601,6 @@ body {
     letter-spacing: 0.03em;
     
     color: #212121;
-  
 }
 
 .form-field {
@@ -635,7 +634,7 @@ body {
 .form-field input,
 .form-field-comment textarea {
     width: 100%;
-    margin: 0;
+    margin: 4px 0 0 0;
     outline: 0;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -674,6 +673,7 @@ body {
 }
 
 .form-label {
+    display: block;
     font-size: 12px;
     line-height: 14px;
     letter-spacing: 0.01em;
@@ -700,10 +700,8 @@ body {
 
 .form-field-concent .policy-agreement {
     text-decoration-line: none;
-    
     color: var(--active-link-color);
-   
-   }
+}
 
 .form-field-concent .policy {
     position: relative;
@@ -744,6 +742,9 @@ body {
 }
 
 .form-field-comment {
+    display: flex;
+    flex-wrap: wrap;
+
     margin-bottom: 20px;
 }
 
