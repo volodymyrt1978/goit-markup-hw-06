@@ -612,15 +612,15 @@ body {
 
 .icon-form {
     position: absolute;
-    bottom: 14px;
-    left: 15px;
+    bottom: 11px;
+    left: 12px;
 
     display: inline-flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    width: 12px;
-    height: 12px;
+    width: 18px;
+    height: 18px;
     
     transition-property: fill;
     transition-duration: var(--animation-duration);
